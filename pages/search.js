@@ -48,9 +48,9 @@ export default function SearchPage({center}) {
                             <BsToggle2Off size={23}/>
                         </div>
                         <div className="grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
-                            {set.map(({info}) => {
+                            {set.map(({info}, i) => {
                                 return (
-                                    <ListingCard image={info.mainImage.url} name={info.title} id={info.id} displayInfo={true}/>
+                                    <ListingCard key={i} image={info.mainImage.url} name={info.title} id={info.id} displayInfo={true}/>
                                 )
                             })}
                         </div>

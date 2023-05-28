@@ -29,9 +29,9 @@ export default function Home() {
         <Filter />
         {/* <h1 className='text-blue-500'>Hello Boyy</h1> */}
         <div className='grid px-5 lg:px-12 lg:grid-cols-4 lg:gap-4 md:grid-cols-2 md:gap-2 lg:mt-[6.5em] sm:mt-[0.5em] '>
-          {data.map(({info}) => {
+          {data.map(({info}, i) => {
             return (
-                <ListingCard image={info.mainImage.url} name={info.title} id={info.id}/>
+                <ListingCard key={i} image={info.mainImage.url} name={info.title} id={info.id}/>
             )
           })}
           {/* <ListingCard />

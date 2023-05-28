@@ -180,7 +180,7 @@ export default function Listing() {
                             <div className="p-2 flex flex-col">
                                 <label className="text-sm font-bold">GUESTS</label>
                                 <select className="border-none">
-                                    {test.map(item => (<option className="">{item} guest</option>))}
+                                    {test.map((item, i) => (<option key={i} className="">{item} guest</option>))}
                                     {/* <option className="">1 guest</option>
                                     <option className="">2 guest</option>
                                     <option className="">3 guest</option>
