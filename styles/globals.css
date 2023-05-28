@@ -1,4 +1,12 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   padding: 0;
   margin: 0;
@@ -15,6 +23,35 @@ a {
   box-sizing: border-box;
 }
 
+/* Styling the Vertical scroller */
+body::-webkit-scrollbar {
+	width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: grey;
+	outline: 1px solid #6a6a6a;
+}
+/*  */
+
+
+/* Horizontal Scroll Bar */
+::-webkit-scrollbar {
+	/* width: 1px; */
+	height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #329a9a;
+	border-radius: 30px;
+}
+/**/
+
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +60,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
